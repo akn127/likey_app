@@ -17,7 +17,7 @@
         <% if current_user.liked_by? %>
           <td>いいねを外す</td>
         <% else %>
-          <td>いいね</td>
+          <td><%= link_to 'いいね', create_like_path(post), method: :post %></td>
         <% end %>
         <td><%= link_to 'Show', post %></td>
         <td><%= link_to 'Edit', edit_post_path(post) %></td>
