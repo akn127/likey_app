@@ -13,5 +13,21 @@
 
 .unlike-btn {
   font-size: 15px;
-  color: #e54747;
+  animation-name: heart;
+  animation-duration: 1s;
+  animation-fill-mode: forwards;
+}
+
+@keyframes heart {
+  0% {
+    transform: scale(0);
+  }
+  50% {
+    transform: scale(1.1);
+  }
+  100% {
+    transform: scale(1);
+    color: #e54747;
+  }
+  
 }
